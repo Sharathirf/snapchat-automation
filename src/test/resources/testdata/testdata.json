@@ -1,0 +1,50 @@
+{
+  "users": {
+    "testUser": {
+      "username": "testuser",
+      "password": "testpass123",
+      "email": "test@example.com",
+      "phone": "+1234567890"
+    },
+    "adminUser": {
+      "username": "admin",
+      "password": "admin123",
+      "email": "admin@example.com",
+      "phone": "+1987654321"
+    }
+  },
+  "app": {
+    "snapchat": {
+      "package": "com.snapchat.android",
+      "activity": "com.snapchat.android.LandingPageActivity",
+      "timeout": 30
+    }
+  },
+  "test": {
+    "maxChatsToProcess": 5,
+    "maxRetries": 3,
+    "waitTime": 2,
+    "scrollCount": 3
+  },
+  "api": {
+    "baseUrl": "https://api.snapchat.com",
+    "timeout": 30,
+    "retryCount": 3
+  },
+  "environment": {
+    "name": "staging",
+    "url": "https://staging.snapchat.com"
+  },
+  "messages": {
+    "success": {
+      "appLaunched": "Snapchat app launched successfully",
+      "chatOpened": "Chat opened successfully",
+      "profileAccessed": "Profile accessed successfully"
+    },
+    "error": {
+      "appNotLaunched": "Failed to launch Snapchat app",
+      "chatNotOpened": "Failed to open chat",
+      "profileNotAccessed": "Failed to access profile"
+    }
+  }
+}

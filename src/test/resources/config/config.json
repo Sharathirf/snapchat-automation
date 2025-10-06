@@ -1,0 +1,66 @@
+{
+  "appium": {
+    "server": {
+      "url": "http://127.0.0.1:4723",
+      "timeout": 300
+    }
+  },
+  "platform": {
+    "name": "android",
+    "version": "11.0"
+  },
+  "device": {
+    "name": "ZA222XPZPR",
+    "udid": "ZA222XPZPR",
+    "type": "real"
+  },
+  "app": {
+    "package": "com.snapchat.android",
+    "activity": "com.snapchat.android.LandingPageActivity",
+    "alternativeActivities": [
+      "com.snap.mushroom.MainActivity",
+      "com.snapchat.android.MainActivity",
+      "com.snapchat.android.SplashActivity"
+    ],
+    "path": "",
+    "noReset": true,
+    "fullReset": false,
+    "autoGrantPermissions": true
+  },
+  "automation": {
+    "name": "UiAutomator2",
+    "autoGrantPermissions": true
+  },
+  "timeouts": {
+    "implicit": 10,
+    "pageLoad": 30,
+    "script": 30,
+    "element": 30
+  },
+  "test": {
+    "maxChatsToProcess": 5,
+    "screenshotOnFailure": true,
+    "videoRecording": false,
+    "retryCount": 2
+  },
+  "directories": {
+    "screenshots": "target/screenshots",
+    "reports": "target/reports",
+    "videos": "target/videos",
+    "logs": "target/logs"
+  },
+  "logging": {
+    "level": "INFO",
+    "fileEnabled": true,
+    "consoleEnabled": true
+  },
+  "reporting": {
+    "extentReport": {
+      "enabled": true,
+      "theme": "dark"
+    },
+    "allureReport": {
+      "enabled": true
+    }
+  }
+}

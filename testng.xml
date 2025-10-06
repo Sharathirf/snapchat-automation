@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Snapchat Automation Suite" parallel="methods" thread-count="1">
+    
+    <parameter name="platform" value="android"/>
+    <parameter name="deviceName" value="ZA222XPZPR"/>
+    <parameter name="appPackage" value="com.snapchat.android"/>
+    <parameter name="appActivity" value="com.snapchat.android.LandingPageActivity"/>
+    
+    <test name="Snapchat Mobile Tests" preserve-order="true">
+        <classes>
+            <class name="com.automation.tests.SnapchatAutomationTest"/>
+        </classes>
+    </test>
+    
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    
+</suite>
